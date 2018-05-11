@@ -17,7 +17,7 @@ object Benchmark {
              val start = System.nanoTime()
              val result = { ..$body }
              val end = System.nanoTime()
-             println("\n$methodName elapsed time: " + (end - start) + "ns\n")
+             println("\n" + $methodName + " elapsed time: " + (end - start) + "ns\n")
              result
            }
          """
